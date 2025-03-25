@@ -1,0 +1,98 @@
+
+body {
+    display: fixed;
+    
+    margin: 0;
+    padding: 0;
+    
+    
+    text-align: center;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 3rem;
+    height: 3rem;
+    top: 2rem;
+    right: 2.063rem;
+    position: absolute;
+    border-radius: 0.25rem;
+    border: 0.063rem  ;
+    
+}
+.nav-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 3rem;
+    position: absolute;
+    top: 1.75rem;
+    left: 1.5rem;
+    border-radius: 0.25rem;
+    border: 0.063rem ;
+    transition:  0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav-a:hover {
+    text-align: linear-gradient(to right, rgba(214,56,130,1), rgba(105,56,210,1));  
+    color: rgb(60, 60, 234);
+}
+.hero-image{
+    display: absolute;
+    justify-content: center;
+width: 327%;
+height: 402;
+top: 6.5rem;
+left: 1.5rem;
+position: absolute;
+border-top-right-radius: 1.795;
+border-bottom-left-radius: 1.795;
+
+}
+.hero-text{
+
+    width: 12.188rem;  
+    height: 5.813rem;  
+    position: absolute; 
+    top: 78.375rem; 
+    left: 29.625rem; 
+    font-style: normal;
+    font-weight: 900;  
+    font-size: 500%;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-transform: uppercase; 
+    color: #fff;
+}
+    
+.hero-text2{
+    width: 12.188rem;  
+    height: 5.813rem;  
+    position: absolute; 
+    top: 7rem; 
+    left: -2rem; 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    
+    text-transform: uppercase; 
+    color:black;
+    
+   
+}
+.text{
+    width: 15rem;  
+    height: 9.813rem;
+    size: 16px;  
+    position: absolute; 
+    top: 17rem;
+    color:gray;
+    text-transform: none;
+}
+.image{
+width: 121.2758560180664;
+height: 51.62642288208008;
+top: 9rem;
+left: -2rem;
+
+}
