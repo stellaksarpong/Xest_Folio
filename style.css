@@ -40,38 +40,40 @@ body {
     color: rgb(60, 60, 234);
 }
 .hero-image{
-    display: absolute;
+    display: flex;
     justify-content: center;
-width: 327%;
-height: 402;
-top: 6.5rem;
-left: 1.5rem;
-position: absolute;
-border-top-right-radius: 1.795;
-border-bottom-left-radius: 1.795;
+    width: 89%;
+    height: 85%;
+    top: 6.5rem;
+    left: 1.5rem;
+    right: 3%;
+    position: absolute;
+    border-top-right-radius: 1.795;
+    
 
 }
 .hero-text{
-
+    justify-content: center;
     width: 12.188rem;  
     height: 5.813rem;  
     position: absolute; 
-    top: 78.375rem; 
-    left: 29.625rem; 
+    top: 40rem; 
+    left: 6rem;
+    border-left: 21rem; 
     font-style: normal;
-    font-weight: 900;  
-    font-size: 500%;
-    line-height: 150%;
+    font: weight 10%; 
+    font-size: 5%;
+    line-height: 15%;
     letter-spacing: 0%;
     text-transform: uppercase; 
-    color: #fff;
+    color: #faf4f4;
 }
     
 .hero-text2{
     width: 12.188rem;  
     height: 5.813rem;  
     position: absolute; 
-    top: 7rem; 
+    top: 10rem; 
     left: -2rem; 
     font-family: 'Plus Jakarta Sans', sans-serif; 
     
@@ -81,18 +83,26 @@ border-bottom-left-radius: 1.795;
    
 }
 .text{
+    
     width: 15rem;  
     height: 9.813rem;
-    size: 16px;  
+    size: 5%;  
+    font-weight: 100;
     position: absolute; 
     top: 17rem;
     color:gray;
     text-transform: none;
 }
 .image{
-width: 121.2758560180664;
-height: 51.62642288208008;
-top: 9rem;
-left: -2rem;
-
+justify-content: center;
+width: 60%;
+height:60%;
+left: 3rem;
+position:absolute;
+top: 23rem;
+}
+.trusted-text{
+    width: 52%;
+    height: 40%;
+    top: 9rem;
 }
