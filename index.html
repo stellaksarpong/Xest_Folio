@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-    <!-- <h1 class="text-3xl font-bold underline text-center">Project</h1> -->
-    <nav class="nav"><img src="./images/material-symbols_menu-rounded.png" alt="menu" ></nav>
-
-    <nav class="nav-a">
-        <img src="./images/Xest Folio.svg" alt=""></nav>
-    
-    <img src="./images/hero image.png" alt="hero image" class="hero-image">
-    <div class="hero-text"> 
-         <h1 class="text-5xl font-bold" >MIAMI</h1>
-         <div class="hero-text2">
-            <h1 class="text-5xl font-bold">WALKER</h1>
-         </div>
-
-       <div class="text"><p class="text-center text-sm font-thin">Award Wining produce designer based <br>in Georgia. We create user-friendly interfaces for fast-growing startups.</p></div>
-
-       
-       <img src="./images/Group 33519.png" alt="image" class="image">
-
-       <div
-       class="trusted-text">
-    <p  class="text-center text-m font-normal">Trusted By</p></div>
+  </head>
+  <body>
+    <!-- navigation-bar -->
+    <div class="flex w-full justify-between items-center p-6 md:p-10 min-h-[80px]">
+        <a href="/" class="w-12 md:ml-12 lg:ml-20">
+          <img 
+            src="./images/Xest Folio.svg" 
+            alt="Xest Portfolio Logo" 
+            width="48" 
+            height="48" 
+            loading="lazy"
+          />
+        </a>
         
-</body>
+        <nav class="md:mr-7 lg:mr-10">
+          <div class="md:hidden">
+            <button aria-label="Toggle navigation menu">
+             
+        <img src="./images/material-symbols_menu-rounded.png" alt="">
+            </button>
+          </div>
+          
+          <ul class="hidden md:flex items-center gap-4 lg:gap-7 lg:px-28">
+            <li><a href="#" class="hover:text-[#4D34E3]">About</a></li>
+            <li><a href="#" class="hover:text-[#4D34E3]">Service</a></li>
+            <li><a href="#" class="hover:text-[#4D34E3]">Blogs</a></li>
+            <li><a href="#" class="hover:text-[#4D34E3]">FAQ</a></li>
+            <li>
+                <div class="relative">
+                    <div class="bg-gradient-to-r from-[#4D34E3] to-[#E93470] w-[164px] h-[60px]"></div>
+                    <button
+                      class="absolute top-0 left-0 px-9 py-4 font-mono font-bold text-white bg-black border-2 border-black transition-transform hover:-translate-x-3 hover:-translate-y-3"
+                    >
+                      Contact Me
+                    </button>
+                  </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  </body>
 </html>
