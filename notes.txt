@@ -1,0 +1,127 @@
+TAILWIND CSS CHEAT SHEET FOR BEGINNERS
+======================================
+
+1. LAYOUT & STRUCTURE
+---------------------
+- flex            : Creates a flexbox container
+- flex-col        : Flex direction column
+- flex-row        : Flex direction row
+- flex-row-reverse: Reverse row order
+- grid            : Creates grid container
+- grid-cols-*     : Grid columns (e.g., grid-cols-2 = 2 columns)
+- gap-*           : Space between elements (gap-4 = 1rem)
+- justify-*       : Horizontal alignment (center, between, around)
+- items-*         : Vertical alignment (center, start, end)
+- relative        : Position relative
+- absolute        : Position absolute
+- hidden          : Hides element
+- md:lg:          : Responsive prefixes (md=768px, lg=1024px)
+
+2. SPACING
+----------
+- p-*            : Padding (p-4 = 1rem)
+- px-*           : Horizontal padding
+- py-*           : Vertical padding
+- m-*            : Margin
+- mx-*           : Horizontal margin
+- my-*           : Vertical margin
+- space-*-*      : Space between child elements
+- w-*            : Width (w-full = 100%, w-1/2 = 50%)
+- h-*            : Height (h-screen = 100vh)
+- min-h-*        : Minimum height
+- max-w-*        : Maximum width
+
+3. TYPOGRAPHY
+-------------
+- text-*         : Font size (text-xl, text-3xl)
+- font-*         : Font weight (font-bold, font-light)
+- text-center    : Text alignment
+- leading-*      : Line height
+- tracking-*     : Letter spacing
+- uppercase      : Uppercase text
+- underline      : Underlined text
+- line-clamp-*   : Truncate text after X lines
+
+4. COLORS
+---------
+- text-*         : Text color (text-white, text-[#666666])
+- bg-*           : Background color
+- bg-gradient-*  : Gradient background
+- border-*       : Border color
+- via-*          : Gradient mid-color
+- from-*/to-*    : Gradient start/end colors
+- opacity-*      : Transparency
+
+5. EFFECTS & TRANSFORMS
+-----------------------
+- shadow-*       : Box shadow
+- rounded-*      : Border radius (rounded-lg = 0.5rem)
+- transition-*   : Animation transition
+- hover:         : Hover state styles
+- group-hover:   : Parent hover state
+- transform      : Enables transforms
+- translate-*    : Move element
+- rotate-*       : Rotate element
+
+6. BACKGROUNDS
+--------------
+- bg-cover       : Cover container with background image
+- bg-center      : Center background image
+- bg-[url('')]   : Set background image
+- bg-opacity-*   : Background transparency
+
+7. BORDERS
+----------
+- border         : Add border
+- border-*       : Border width (border-2)
+- border-*-*     : Colored border (border-blue-500)
+- rounded-*      : Border radius
+
+8. SPECIAL UTILITIES
+--------------------
+- group          : Group elements for shared hover
+- duration-*     : Transition duration
+- ease-*         : Transition timing function
+- content-*      : For pseudo-elements
+- z-*            : Z-index
+- backdrop-*     : Backdrop effects
+
+RESPONSIVE DESIGN BREAKPOINTS
+-----------------------------
+- sm: 640px      : sm:text-center
+- md: 768px      : md:flex
+- lg: 1024px     : lg:grid-cols-3
+- xl: 1280px     : xl:w-1/4
+- 2xl: 1536px    : 2xl:max-w-7xl
+
+CUSTOM VALUES
+-------------
+- Arbitrary values in square brackets:
+  - w-[95%]      : Custom width
+  - text-[#666]  : Custom color
+  - h-[140vh]    : Custom viewport height
+
+QUICK TIPS
+----------
+1. Utility classes are applied directly in HTML
+2. Classes are responsive-first (mobile styles first)
+3. Hover/focus states are prefix with hover: or focus:
+4. Dark mode: prefix with dark: (dark:bg-gray-800)
+5. Combine classes for complex designs
+6. Use JIT (Just-in-Time) mode for best performance
+
+EXAMPLE PATTERNS
+----------------
+Button with hover effect:
+<button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+  Click me
+</button>
+
+Card component:
+<div class="max-w-sm rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="img.jpg" alt="Sunset">
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">Card Title</div>
+    <p class="text-gray-700 text-base">Card content...</p>
+  </div>
+</div>

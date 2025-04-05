@@ -1,14 +1,697 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=h1, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    <h1 class="text-3xl font-bold underline text-center">Project</h1>
-    <img src="./images/Xest Folio.svg" alt="">
-    <img src="./images/hero image.png" alt="">
-</body>
+  </head>
+  <body>
+    <!-- navigation-bar -->
+    <div
+      class="flex w-full justify-between items-center p-6 md:p-10 min-h-[80px]"
+    >
+      <a href="/" class="w-12 md:ml-12 lg:ml-20">
+        <img
+          src="./images/Xest Folio.svg"
+          alt="Xest Portfolio Logo"
+          width="48"
+          height="48"
+          loading="lazy"
+        />
+      </a>
+
+      <nav class="md:mr-7 lg:mr-10">
+        <div class="md:hidden">
+          <button aria-label="Toggle navigation menu">
+            <img src="./images/material-symbols_menu-rounded.png" alt="" />
+          </button>
+        </div>
+
+        <ul class="hidden md:flex items-center gap-4 lg:gap-7 lg:px-28">
+          <li><a href="#" class="hover:text-[#4D34E3]">About</a></li>
+          <li><a href="#" class="hover:text-[#4D34E3]">Service</a></li>
+          <li><a href="#" class="hover:text-[#4D34E3]">Blogs</a></li>
+          <li><a href="#" class="hover:text-[#4D34E3]">FAQ</a></li>
+          <li>
+            <div class="relative">
+              <div
+                class="bg-gradient-to-r from-[#4D34E3] to-[#E93470] w-[164px] h-[60px]"
+              ></div>
+              <button
+                class="absolute top-0 left-0 px-9 py-4 font-mono font-bold text-white bg-black border-2 border-black transition-transform hover:-translate-x-3 hover:-translate-y-3"
+              >
+                Contact Me
+              </button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Hero Container -->
+    <div class="md:flex md:pt-20 md:flex-row-reverse">
+      <!-- Hero Image (Fixed alt text + sizing) -->
+      <div class="hero h-[40vh] w-full p-5">
+        <img
+          src="./images/hero image.png"
+          alt="Miami Walker Illustration"
+          class="lg:h-[80vh] md:relative md:-ml-18 lg:-ml-46 w-full object-contain"
+          width="800"
+          height="800"
+          loading="lazy"
+        />
+      </div>
+
+      <!-- Headings (Gradient + Text) -->
+      <div
+        class="w-full flex flex-col -mt-32 md:-mt-0 md:leading-none pt-24 lg:pt-52 md:pt-32 md:pl-32 justify-center items-center"
+      >
+        <h1
+          class="text-white lg:text-[150px] md:text-[80px] text-5xl font-extrabold md:font-bold md:text-transparent bg-clip-text bg-gradient-to-r from-[#4D34E3] via-[#ff1e1e] to-[#E93470]"
+        >
+          MIAMI
+        </h1>
+        <h1
+          class="lg:text-[160px] md:text-[80px] text-5xl font-extrabold md:z-10"
+        >
+          WALKE<span class="text-black md:text-white">R</span>
+        </h1>
+      </div>
+    </div>
+
+    <!-- Description (Fixed spacing + semantics) -->
+    <section
+      class="w-full min-h-[35vh] flex items-center justify-center md:justify-start px-10 lg:pt-32 md:pt-32 lg:pl-28 md:pl-20"
+    >
+      <p
+        class="text-md text-center text-[#666666] font-light md:w-[45%] md:text-left"
+      >
+        Award-winning product designer based in Georgia. We create user-friendly
+        interfaces for fast-growing startups.
+      </p>
+    </section>
+
+    <!-- Button (Preserved Animation) -->
+    <div
+      class="flex items-center justify-center md:justify-start lg:pl-28 md:pl-18 min-h-[5vh] py-8"
+    >
+      <div class="relative">
+        <div
+          class="bg-gradient-to-r from-[#4D34E3] to-[#E93470] w-[182px] h-[60px]"
+        ></div>
+        <button
+          class="absolute top-0 left-0 px-9 py-4 font-mono font-bold text-white bg-black border-2 border-black transition-transform hover:translate-x-[-13px] hover:translate-y-[-13px]"
+        >
+          Book A Call
+        </button>
+      </div>
+    </div>
+    <div class="w-full py-12 md:py-20">
+      <div class="container mx-auto px-4">
+        <!-- Heading -->
+        <h2
+          class="text-center text-gray-500 text-lg md:text-2xl font-light mb-8 md:mb-16"
+        >
+          Trusted By
+        </h2>
+
+        <!-- Logos Grid -->
+        <div
+          class="flex flex-wrap items-center justify-center gap-6 md:gap-12 lg:gap-20"
+        >
+          <!-- Logo 1 - Always visible -->
+          <img
+            src="./images/Logo 05.png"
+            alt="Paperz Logo"
+            width="100px"
+            height="100px"
+            class="md:h-10 hidden md:block transition-transform hover:scale-105"
+          />
+
+          <!-- Logo 2 - Always visible -->
+          <img
+            src="./images/Logo 04.png"
+            alt="Dorfus Logo"
+            class="h-8 md:h-10 transition-transform hover:scale-105"
+            width="100px"
+            height="100px"
+          />
+
+          <!-- Logo 3 - Always visible -->
+          <img
+            src="images/Logo 01.png"
+            alt="Martino Logo"
+            class="h-8 md:h-10 transition-transform hover:scale-105"
+            width="100px"
+            height="100px"
+          />
+
+          <!-- Logo 4 - Always visible -->
+          <img
+            src="./images/Logo 02 (1).png"
+            alt="Square Logo"
+            class="h-8 md:h-10 transition-transform hover:scale-105"
+            width="100px"
+            height="100px"
+          />
+
+          <!-- Logo 5 - Hidden on mobile, visible from md breakpoint -->
+          <img
+            src="./images/Logo 03.png"
+            alt="Gobona Logo"
+            class="h-8 md:h-10 hidden md:block transition-transform hover:scale-105"
+            width="100px"
+            height="100px"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="md:flex md:p-20 p-5">
+      <!-- Features Column -->
+      <div class="space-y-6 md:w-1/2 lg:w-full md:pr-10 lg:pr-20">
+        <h1
+          class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#4D34E3] via-[#ff1e1e] to-[#E93470]"
+        >
+          Features
+        </h1>
+        <h2 class="font-bold text-3xl md:text-4xl">
+          Giving Your Business Some Great Ideas
+        </h2>
+        <p class="text-sm text-gray-500 font-light md:text-base">
+          Every designer needs the right tools to do the perfect job.
+          Thankfully, we can do that. I design products that are more than
+          pretty. I make them shippable and usable.
+        </p>
+        <div class="relative w-fit mt-8">
+          <div
+            class="absolute -z-10 w-[165px] h-[60px] bg-gradient-to-r from-[#4D34E3] to-[#E93470]"
+          ></div>
+          <button
+            class="px-8 py-3 font-mono font-bold text-white bg-black border-2 border-black transition-transform hover:-translate-x-2 hover:-translate-y-2"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
+
+      <!-- Experiences Grid -->
+      <div
+        class="mt-16 md:mt-0 md:w-1/2 lg:w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10"
+      >
+        <!-- UX Experience -->
+        <div
+          class="space-y-4 p-6 hover:bg-gray-50 rounded-lg transition md:mt-10"
+        >
+          <img
+            src="./images/image (1).png"
+            alt="UX Experience Icon"
+            class="h-28 w-56"
+            loading="lazy"
+          />
+          <h3 class="font-bold text-xl">UX Experience</h3>
+          <p class="text-sm text-gray-500 font-light">
+            I design products that are more than pretty. I make them usable.
+          </p>
+        </div>
+
+        <!-- UI Design -->
+        <div class="space-y-4 p-6 hover:bg-gray-50 rounded-lg transition">
+          <img
+            src="./images/UI.png"
+            alt="UI Design Icon"
+            class="h-28 w-56"
+            loading="lazy"
+          />
+          <h3 class="font-bold text-xl">UI Design</h3>
+          <p class="text-sm text-gray-500 font-light">
+            Pixel-perfect interfaces that delight users.
+          </p>
+        </div>
+        <!-- Product Analysis -->
+        <div class="space-y-4 p-6 hover:bg-gray-50 rounded-lg transition">
+          <img
+            src="./images/product.png"
+            alt="Product Analysis Icon"
+            class="h-28 w-56"
+            loading="lazy"
+          />
+          <h3 class="font-bold text-xl">Product Analysis</h3>
+          <p class="text-sm text-gray-500 font-light">
+            I analyze user needs to build functional products.
+          </p>
+        </div>
+
+        <!-- Product Design -->
+        <div
+          class="space-y-4 p-6 hover:bg-gray-50 rounded-lg transition md:-mt-10"
+        >
+          <img
+            src="./images/PRODUCTDESIGN.png"
+            alt="Product Design Icon"
+            class="h-28 w-56"
+            loading="lazy"
+          />
+          <h3 class="font-bold text-xl">Product Design</h3>
+          <p class="text-sm text-gray-500 font-light">
+            End-to-end design from concept to launch.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- years -->
+    <div class="hidden lg:flex lg:w-full justify-center space-x-28">
+      <div>
+        <img src="./images/12K+.png" alt="" />
+
+        <h1>Project Complete</h1>
+      </div>
+      <div>
+        <img src="./images/7K+.png" alt="" />
+        <h1>Happy Client</h1>
+      </div>
+      <div>
+        <img src="./images/10+.png" alt="" />
+        <h1>Years Experience</h1>
+      </div>
+
+      <div>
+        <img src="./images/270+.png" alt="" />
+        <h1>Win Awards</h1>
+      </div>
+    </div>
+    <div class="min-h-[120vh] w-full p-5 md:mt-20 space-y-10">
+      <!-- Header Section -->
+      <div class="md:flex md:w-full md:justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <h1
+            class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#4D34E3] via-[#ff1e1e] to-[#E93470]"
+          >
+            Portfolio
+          </h1>
+          <h2 class="font-bold text-3xl">Some Of Our Best Works</h2>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="relative w-fit h-[60px]">
+          <div
+            class="absolute -z-10 w-[155px] h-[60px] bg-gradient-to-r from-[#4D34E3] to-[#E93470]"
+          ></div>
+          <button
+            class="px-8 py-4 font-mono font-bold text-white bg-black border-2 border-black transition-transform hover:-translate-x-3 hover:-translate-y-3"
+          >
+            Load More
+          </button>
+        </div>
+      </div>  
+
+      <!-- Mobile Portfolio Grid (md and below) -->
+      <div class="lg:hidden grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div
+          class="h-[26vh] bg-[url('./images/GREENFY.png')] bg-cover bg-center flex flex-col justify-end p-5 relative"
+        >
+          <h3
+            class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#4D34E3] via-[#ff1e1e] to-[#E93470]"
+          >
+            UI DESIGN
+          </h3>
+          <h4 class="text-[#FFD9D9] font-black text-2xl">Greenfy Website</h4>
+        </div>
+        <img
+          src="./images/greenfy1.png"
+          alt="Laptop showcasing design work"
+          class="w-full h-full object-cover"
+        />
+        <img
+          src="./images/greenfy2.png"
+          alt="Camera product design"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <!-- Desktop Portfolio Grid (lg and up) -->
+      <div
+        class="hidden lg:grid grid-cols-2 xl:grid-cols-3 gap-6 w-full mx-auto"
+      >
+        <!-- Project Card 1 -->
+        <div
+          class="h-[30vh] bg-[url('./images/GREENFY.png')] bg-cover bg-center flex flex-col justify-end p-5 relative"
+        >
+          <h3
+            class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#4D34E3] via-[#ff1e1e] to-[#E93470]"
+          >
+            UI DESIGN
+          </h3>
+          <h4 class="text-[#FFD9D9] font-black text-2xl">Greenfy Website</h4>
+        </div>
+
+        <!-- Project Images -->
+        <img
+          src="./images/greenfy1.png"
+          alt="Web design on laptop screen"
+          class="w-full h-full object-cover"
+        />
+        <img
+          src="./images/greenfy2.png"
+          alt="Photography equipment design"
+          class="w-full h-full object-cover"
+        />
+
+        <!-- Project Card 2 -->
+        <div
+          class="h-[30vh] bg-[url('./images/GREENFY.png')] bg-cover bg-center flex flex-col justify-end p-5 relative"
+        >
+          <h3
+            class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#4D34E3] via-[#ff1e1e] to-[#E93470]"
+          >
+       
+        </div>
+
+        <!-- More Images -->
+        <img
+          src="./images/greenfy1.png"
+          alt="Desktop application design"
+          class="w-full h-full object-cover"
+        />
+        <img
+          src="./images/greenfy2.png"
+          alt="Camera accessory design"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+    <!-- Lastest Blog -->
+<div class="bg-[#181818] w-full h-[140vh] min-h[120vh] md:h-[90vh] md:min-h[100vh] lg:h-[240vh] lg:min-h-[160vh] p-10 space-y-10 lg:space-y-40">
+  <div class="w-full md:flex md:justify-between md:px-10">
+    <div class="md:w-1/3">
+      <h1 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#4D34E3] via-[#ff1e1e] to-[#E93470]">
+        LATEST BLOG
+      </h1>
+      <h1 class="text-4xl font-bold text-white">
+        Check Some of Latest News & Articles
+      </h1>
+    </div>
+    <div class="flex min-h-[10vh] pt-10">
+      <div class="bg-gradient-to-r from-[#4D34E3] to-[#E93470] w-[155px] h-[60px]">
+        <button class="px-8 py-4 font-mono font-bold text-black bg-white border-2 border-black transition-transform hover:translate-x-[-13px] hover:translate-y-[-13px]">
+          Load More
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- blogs -->
+  <div class="space-y-28 md:grid md:grid-cols-2 lg:p-10 lg:gap-x-28">
+    <!-- Blog 1 -->
+    <div class="p-2 w-full h-[33vh]">
+      <div class="relative w-full h-[20vh] flex items-center justify-center">
+        <div class="absolute w-full h-40 lg:h-[40vh] bg-[url('./images/typing1.png')] bg-cover shadow-lg"></div>
+        <div class="absolute w-full min-h-40 lg:space-y-5 lg:h-[30vh] mt-56 ml-20 bg-[#181818] flex flex-col p-5 justify-center shadow-lg">
+          <h1 class="text-xs lg:text-sm text-[#666666]">UI Design | 22 May 2023</h1>
+          <h2 class="text-md lg:text:lg font-bold text-white">What is UI Design in Front End Design?</h2>
+          <p class="text-xs lg:text-sm text-[#666666] font-light">
+            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system
+          </p>
+          <div class="flex">
+            <h1 class="text-xs lg:text-sm flex pt-1 text-white font-mono font-bold">READ MORE</h1>
+            <img class="w-5 h-5" src="./images/arrow.png" alt="Right arrow icon">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog 2 -->
+    <div class="p-2 w-full h-[33vh]">
+      <div class="relative w-full h-[20vh] flex items-center justify-center">
+        <div class="absolute w-full h-40 lg:h-[40vh] bg-[url('./images/typing1.png')] bg-cover shadow-lg"></div>
+        <div class="absolute w-full min-h-40 lg:space-y-5 lg:h-[30vh] mt-56 ml-20 bg-[#181818] flex flex-col p-5 justify-center shadow-lg">
+          <h1 class="text-xs lg:text-sm text-[#666666]">UI Design | 22 May 2023</h1>
+          <h2 class="text-md lg:text:lg font-bold text-white">What is UI Design in Front End Design?</h2>
+          <p class="text-xs lg:text-sm text-[#666666] font-light">
+            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system
+          </p>
+          <div class="flex">
+            <h1 class="text-xs lg:text-sm flex pt-1 text-white font-mono font-bold">READ MORE</h1>
+            <img class="w-5 h-5" src="./images/arrow.png" alt="Right arrow icon">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog 3 (Hidden on mobile) -->
+    <div class="hidden lg:flex p-2 w-full lg:h-[33vh]">
+      <div class="relative w-full h-[20vh] flex items-center justify-center">
+        <div class="absolute w-full h-40 lg:h-[40vh] bg-[url('./images/typing3.png')] bg-cover shadow-lg"></div>
+        <div class="absolute w-full min-h-40 lg:space-y-5 lg:h-[30vh] mt-56 ml-20 bg-[#181818] flex flex-col p-5 justify-center shadow-lg">
+          <h1 class="text-xs lg:text-sm text-[#666666]">UI Design | 22 May 2023</h1>
+          <h2 class="text-md lg:text:lg font-bold text-white">What is UI Design in Front End Design?</h2>
+          <p class="text-xs lg:text-sm text-[#666666] font-light">
+            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system
+          </p>
+          <div class="flex">
+            <h1 class="text-xs lg:text-sm flex pt-1 text-white font-mono font-bold">READ MORE</h1>
+            <img class="w-5 h-5" src="./images/arrow.png" alt="Right arrow icon">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog 4 (Hidden on mobile) -->
+    <div class="hidden lg:flex p-2 w-full h-[33vh]">
+      <div class="relative w-full h-[20vh] flex items-center justify-center">
+        <div class="absolute w-full h-40 lg:h-[40vh] bg-[url('./images/typing2.png')] bg-cover shadow-lg"></div>
+        <div class="absolute w-full min-h-40 lg:space-y-5 lg:h-[30vh] mt-56 ml-20 bg-[#181818] flex flex-col p-5 justify-center shadow-lg">
+          <h1 class="text-xs lg:text-sm text-[#666666]">UI Design | 22 May 2023</h1>
+          <h2 class="text-md lg:text:lg font-bold text-white">What is UI Design in Front End Design?</h2>
+          <p class="text-xs lg:text-sm text-[#666666] font-light">
+            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system
+          </p>
+          <div class="flex">
+            <h1 class="text-xs lg:text-sm flex pt-1 text-white font-mono font-bold">READ MORE</h1>
+            <img class="w-5 h-5" src="./images/arrow.png" alt="Right arrow icon">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog 5 (Hidden on mobile) -->
+    <div class="hidden lg:flex p-2 w-full h-[33vh]">
+      <div class="relative w-full h-[20vh] flex items-center justify-center">
+        <div class="absolute w-full h-40 lg:h-[40vh] bg-[url('./images/typing2.png')] bg-cover shadow-lg"></div>
+        <div class="absolute w-full min-h-40 lg:space-y-5 lg:h-[30vh] mt-56 ml-20 bg-[#181818] flex flex-col p-5 justify-center shadow-lg">
+          <h1 class="text-xs lg:text-sm text-[#666666]">UI Design | 22 May 2023</h1>
+          <h2 class="text-md lg:text:lg font-bold text-white">What is UI Design in Front End Design?</h2>
+          <p class="text-xs lg:text-sm text-[#666666] font-light">
+            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system
+          </p>
+          <div class="flex">
+            <h1 class="text-xs lg:text-sm flex pt-1 text-white font-mono font-bold">READ MORE</h1>
+            <img class="w-5 h-5" src="./images/arrow.png" alt="Right arrow icon">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog 6 (Hidden on mobile) -->
+    <div class="hidden lg:flex p-2 w-full h-[33vh]">
+      <div class="relative w-full h-[20vh] flex items-center justify-center">
+        <div class="absolute w-full h-40 lg:h-[40vh] bg-[url('./images/typing3.png')] bg-cover shadow-lg"></div>
+        <div class="absolute w-full min-h-40 lg:space-y-5 lg:h-[30vh] mt-56 ml-20 bg-[#181818] flex flex-col p-5 justify-center shadow-lg">
+          <h1 class="text-xs lg:text-sm text-[#666666]">UI Design | 22 May 2023</h1>
+          <h2 class="text-md lg:text:lg font-bold text-white">What is UI Design in Front End Design?</h2>
+          <p class="text-xs lg:text-sm text-[#666666] font-light">
+            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system
+          </p>
+          <div class="flex">
+            <h1 class="text-xs lg:text-sm flex pt-1 text-white font-mono font-bold">READ MORE</h1>
+            <img class="w-5 h-5" src="./images/arrow.png" alt="Right arrow icon">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Testimonials -->
+<div class="min-h-[120vh] md:min-h-[70vh] lg:min-h[180vh] lg:h-[90vh] w-full space-y-5 p-5 pt-20">
+  <h1 class="text-md text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#47406b] via-[#da1eff] to-[#E93470]">
+    Testimonials
+  </h1>
+
+  <h2 class="text-3xl text-center font-bold">What our customer say</h2>
+  
+  <div class="md:flex lg:pt-20 gap-5">
+    <!-- Testimonial 1 -->
+    <div class="space-y-5 p-5 bg-white/5 rounded-lg">
+      <img class="h-5 w-5" src="./images/icon.png" alt="Quote icon" />
+      <p class="text-[#090D23]">
+        “Now, i can track my business activity with easier and have a great
+        understandable to operate the products"
+      </p>
+      <div class="flex w-full items-center justify-between">
+        <div class="flex items-center">
+          <img src="./images/woman1.png" alt="Berry Gunawan" class="w-10 h-10 rounded-full" />
+          <h3 class="pl-3 text-[#090D23]">Berry Gunawan</h3>
+        </div>
+        <img class="w-24 h-7" src="./images/rate.png" alt="5 star rating" />
+      </div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="space-y-5 p-5 bg-white/5 rounded-lg">
+      <img class="h-5 w-5" src="./images/Icon.png" alt="Quote icon" />
+      <p class="text-[#090D23]">
+        “Now, i can track my business activity with easier and have a great
+        understandable to operate the products"
+      </p>
+      <div class="flex w-full items-center justify-between">
+        <div class="flex items-center">
+          <img src="./images/woman2.png" alt="Janne Cooper" class="w-10 h-10 rounded-full" />
+          <h3 class="pl-3 text-[#090D23]">Janne Cooper</h3>
+        </div>
+        <img class="w-24 h-7" src="./images/rate.png" alt="5 star rating" />
+      </div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="space-y-5 p-5 bg-white/5 rounded-lg">
+      <img class="h-5 w-5" src="./images/Icon.png" alt="Quote icon" />
+      <p class="text-[#090D23]">
+        “Now, i can track my business activity with easier and have a great
+        understandable to operate the products"
+      </p>
+      <div class="flex w-full items-center justify-between">
+        <div class="flex items-center">
+          <img src="./images/man.png" alt="Cobocannaeru" class="w-10 h-10 rounded-full" />
+          <h3 class="pl-3 text-[#090D23]">Cobocannaeru</h3>
+        </div>
+        <img class="w-24 h-7" src="./images/rate.png" alt="5 star rating" />
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FAQs Section -->
+<div class="bg-[#181818] min-h-[70vh] w-full pt-10 p-5 space-y-10 md:flex md:flex-row-reverse md:gap-x-20 md:p-10 md:items-center">
+  <!-- FAQ Content -->
+  <div class="md:w-1/2 space-y-6 lg:space-y-8">
+    <h1 class="text-md font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#2300d4] via-[#ff0055] to-[#ff0055]">
+      FAQS
+    </h1>
+    <h2 class="text-3xl text-white font-bold">
+      Be Kind to Your Mind Question & Answer
+    </h2>
+    <p class="text-sm text-[#666666] font-light md:text-base">
+      All Your Questions are in a document, in question and answer format,
+      that introduces newcomers to a topic or answers common questions.
+    </p>
+  </div>
+
+  <!-- FAQ Accordion -->
+  <div class="md:w-1/2 pt-5 space-y-4">
+    <!-- FAQ Item 1 -->
+    <div class="bg-[#222222] p-4 rounded-lg group">
+      <button class="flex justify-between items-center w-full">
+        <h3 class="text-white text-left text-md md:text-lg">
+          How can we help your business?
+        </h3>
+        <img src="./images/down.png" alt="Expand FAQ" 
+             class="w-3 h-3  transform group-hover:rotate-180 transition-transform">
+      </button>
+      <div class="hidden group-focus:block pt-3 text-[#999999] text-sm">
+        We provide tailored solutions to streamline your operations and boost productivity through our specialized services.
+      </div>
+    </div>
+
+    <!-- FAQ Item 2 -->
+    <div class="bg-[#222222] p-4 rounded-lg group">
+      <button class="flex justify-between items-center w-full">
+        <h3 class="text-white text-left text-md md:text-lg">
+          What are the advantages of Bisnext?
+        </h3>
+        <img src="./images/down.png" alt="Expand FAQ" 
+             class="w-3 h-3 transform group-hover:rotate-180 transition-transform">
+      </button>
+      <div class="hidden group-focus:block pt-3 text-[#999999] text-sm">
+        Bisnext offers cutting-edge technology solutions with 24/7 support and customizable packages for your business needs.
+      </div>
+    </div>
+
+    <!-- FAQ Item 3 -->
+    <div class="bg-[#222222] p-4 rounded-lg group">
+      <button class="flex justify-between items-center w-full">
+        <h3 class="text-white text-left text-md md:text-lg">
+          Let's find an office near you?
+        </h3>
+        <img src="./images/down.png" alt="Expand FAQ" 
+             class="w-3 h-3 transform group-hover:rotate-180 transition-transform">
+      </button>
+      <div class="hidden group-focus:block pt-3 text-[#999999] text-sm">
+        Visit our locations page or contact our support team to find the nearest office to your location.
+      </div>
+    </div>
+
+    <!-- FAQ Item 4 -->
+    <div class="bg-[#222222] p-4 rounded-lg group">
+      <button class="flex justify-between items-center w-full">
+        <h3 class="text-white text-left text-md md:text-lg">
+          How IT consultancy experts work?
+        </h3>
+        <img src="./images/down.png" alt="Expand FAQ" 
+             class="w-3 h-3 transform group-hover:rotate-180 transition-transform">
+      </button>
+      <div class="hidden group-focus:block pt-3 text-[#999999] text-sm">
+        Our experts analyze your current infrastructure, identify improvement areas, and implement optimized solutions.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="min-h-[90vh] w-full pt-16 pb-10 px-5 space-y-10 flex flex-col justify-center items-center bg-white">
+  <!-- Call to Action -->
+  <div class="text-center space-y-4 max-w-2xl mx-auto">
+    <h2 class="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#2300d4] via-[#ff0055] to-[#ff0055]">
+      Have a project in mind?
+    </h2>
+    <h3 class="text-3xl text-black font-bold">
+      Let's Make Something Great Together!
+    </h3>
+  </div>
+
+  <!-- Decorative Image -->
+  <img class="w-32 h-auto" src="./images/button.png" alt="Decorative illustration" />
+
+  <!-- Logo -->
+  <img class="h-10 w-auto" src="./images/Xest Folio.svg" alt="Company logo" />
+
+  <!-- Social Icons -->
+  <div class="flex justify-center space-x-6 md:space-x-8">
+    <a href="#" aria-label="Facebook">
+      <img src="./images/facebook.png" alt="Facebook icon" class="h-4 w-4 hover:opacity-80 transition-opacity" />
+    </a>
+    <a href="#" aria-label="LinkedIn">
+      <img src="./images/linkedin.png" alt="LinkedIn icon" class="h-4 w-4 hover:opacity-80 transition-opacity" />
+    </a>
+    <a href="#" aria-label="Instagram">
+      <img src="./images/instag.png" alt="Instagram icon" class="h-4 w-4 hover:opacity-80 transition-opacity" />
+    </a>
+    <a href="#" aria-label="Behance">
+      <img src="./images/be.png" alt="Behance icon" class="h-4 w-4 hover:opacity-80 transition-opacity" />
+    </a>
+    <a href="#" aria-label="Dribbble">
+      <img src="./images/ball.png" alt="Dribbble icon" class="h-4 w-4 hover:opacity-80 transition-opacity" />
+    </a>
+  </div>
+
+  <!-- Legal Links -->
+  <div class="w-full max-w-4xl space-y-5 text-center">
+    <div class="flex justify-center space-x-4">
+      <a href="#" class="text-[#ACACAC] hover:text-gray-800 transition-colors">Privacy Policy</a>
+      <span class="text-[#ACACAC]">|</span>
+      <a href="#" class="text-[#ACACAC] hover:text-gray-800 transition-colors">Terms and Conditions</a>
+    </div>
+    <hr class="w-full max-w-xs mx-auto border-[#ACACAC]" />
+    <p class="text-[#ACACAC]">© 2023 Ideapeel Inc. All Rights Reserved</p>
+  </div>
+</footer>
+  </body>
 </html>
